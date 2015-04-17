@@ -25,25 +25,25 @@ class windowClass(wx.Frame):
 		
 		toolbar=self.CreateToolBar()
 	
-		openToolButton=toolbar.AddLabelTool(wx.ID_ANY, 'Open', wx.Bitmap('fileopen.png'))
-		toolbar.Realize()
-		self.Bind(wx.EVT_TOOL, self.open, openToolButton)
+		#openToolButton=toolbar.AddLabelTool(wx.ID_ANY, 'Open', wx.Bitmap('fileopen.png'))
+		#toolbar.Realize()
+		#self.Bind(wx.EVT_TOOL, self.open, openToolButton)
 		
-		saveToolButton=toolbar.AddLabelTool(wx.ID_ANY, 'Writer', wx.Bitmap('filesave.png'))
-		toolbar.Realize()
-		self.Bind(wx.EVT_TOOL, self.Writer, saveToolButton)
+		#saveToolButton=toolbar.AddLabelTool(wx.ID_ANY, 'Writer', wx.Bitmap('filesave.png'))
+		#toolbar.Realize()
+		#self.Bind(wx.EVT_TOOL, self.Writer, saveToolButton)
 		
-		enToolButton=toolbar.AddLabelTool(wx.ID_ANY, 'Encryption', wx.Bitmap('lock.png'))
-		toolbar.Realize()
-		self.Bind(wx.EVT_TOOL, self.encrypt, enToolButton)
+		#enToolButton=toolbar.AddLabelTool(wx.ID_ANY, 'Encryption', wx.Bitmap('lock.png'))
+		#toolbar.Realize()
+		#self.Bind(wx.EVT_TOOL, self.encrypt, enToolButton)
 		
-		deToolButton=toolbar.AddLabelTool(wx.ID_ANY, 'Decryption', wx.Bitmap('unlock.png'))
-		toolbar.Realize()
-		self.Bind(wx.EVT_TOOL, self.decrypt, deToolButton)
+		#deToolButton=toolbar.AddLabelTool(wx.ID_ANY, 'Decryption', wx.Bitmap('unlock.png'))
+		#toolbar.Realize()
+		#self.Bind(wx.EVT_TOOL, self.decrypt, deToolButton)
 		
-		quitToolButton=toolbar.AddLabelTool(wx.ID_ANY, 'Quit', wx.Bitmap('Quit.png'))
-		toolbar.Realize()
-		self.Bind(wx.EVT_TOOL, self.Quit, quitToolButton)
+		#quitToolButton=toolbar.AddLabelTool(wx.ID_ANY, 'Quit', wx.Bitmap('Quit.png'))
+		#toolbar.Realize()
+		#self.Bind(wx.EVT_TOOL, self.Quit, quitToolButton)
 		
 		openItem = fileButton.Append(wx.ID_OPEN, 'Open')
 		self.SetMenuBar(menuBar)
