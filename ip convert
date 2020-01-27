@@ -1,0 +1,15 @@
+def IP_Decimal(ip_list):
+	power = 24
+	global Deci_ip
+	Deci_ip = 0
+	for i in ip_list:
+			Result = int(i)*(2**power)
+			Deci_ip += Result
+			power -= 8
+
+IP = input("Enter ip address in Octal :> ")
+ip_list = IP.split('.')
+IP_Decimal(ip_list)
+print(f'IP in Decimal : > {Deci_ip} ')
+print(f'IP in Hexadecimal : > {hex(Deci_ip)} ')
+print(f'IP in Binary : > {bin(Deci_ip)} ')
