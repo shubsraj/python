@@ -1,2 +1,2 @@
 # python
-python-encrypted-text-editer
+some python projects
